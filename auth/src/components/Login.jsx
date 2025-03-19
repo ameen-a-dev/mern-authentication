@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
     const handleSubmit = (e) =>{
@@ -29,9 +30,9 @@ const Login = () => {
             />
           </div>
           <div className="flex items-center justify-between mt-4">
-            <a href="#" className="text-sm text-blue-600 hover:underline">
+            <Link to={"/forget"} className="text-sm text-blue-600 hover:underline">
               Forgot Password?
-            </a>
+            </Link>
           </div>
           <button
             type="submit"
@@ -42,9 +43,9 @@ const Login = () => {
         </form>
         <p className="mt-4 text-sm text-center text-gray-600">
           Don't have an account?{' '}
-          <a href="#" className="text-blue-600 hover:underline">
+          <Link to={"/signup"} className="text-blue-600 hover:underline">
             Sign up
-          </a>
+          </Link>
         </p>
       </div>
     </div>

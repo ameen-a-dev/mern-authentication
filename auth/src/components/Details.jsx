@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 
 const Details = () => {
     const navigate  = useNavigate()
-    let authorized = true
+    let authorized = false
 
     useEffect(()=>{
         if(!authorized){
